@@ -2,7 +2,7 @@
 
 backend do aplicativo em outro repositorio (lgs2005/calendar_app)
 <br/>
-Feito para a disciplina Desenvolvimento de Projeto em 2021 em 3 meses.
+Feito para a disciplina Desenvolvimento de Projeto em 2021 em um mes (Novembro a Dezembro) (sim eu acabei fazendo de ultima hora) (longa história).
 <br/>
 falta de commits pois foi republicado de outra conta
 <br/>
