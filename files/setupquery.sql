@@ -1,0 +1,48 @@
+-- SQLite
+PRAGMA foreign_keys=on;
+
+CREATE TABLE User(
+	id INTEGER PRIMARY KEY,
+	name TEXT NOT NULL UNIQUE,
+	hash TEXT NOT NULL,
+	token TEXT NOT NULL
+);
+
+CREATE TABLE Calendar(
+	id INTEGER PRIMARY KEY,
+	name TEXT NOT NULL,
+	owner INTEGER NOT NULL,
+	description TEXT NOT NULL,
+
+	CONSTRAINT fk_owner
+		FOREIGN KEY (owner)
+		REFERENCES User (id)
+		ON DELETE CASCADE
+);
+
+CREATE TABLE Event(
+	id INTEGER PRIMARY KEY,
+	name TEXT NOT NULL,
+	calendar INTEGER NOT NULL,
+	description TEXT NOT NULL,
+
+	CONSTRAINT fk_calendar
+		FOREIGN KEY (calendar)
+		REFERENCES Calendar (id)
+		ON DELETE CASCADE
+);
+
+CREATE TABLE CalendarShare (
+	calendar INTEGER NOT NULL,
+	user INTEGER NOT NULL,
+
+	CONSTRAINT fk_calendar
+		FOREIGN KEY (calendar)
+		REFERENCES Calendar (id)
+		ON DELETE CASCADE,
+
+	CONSTRAINT fk_user
+		FOREIGN KEY (user)
+		REFERENCES User (id)
+		ON DELETE CASCADE
+);

@@ -1,0 +1,10 @@
+event publish:
+    REQUIRED:
+        title: string, maxlen 30
+        timestamp: int, min 0
+        calendar: int, min 1
+
+    id: int, which event to replace, min 1
+    description: string, maxlen 500
+
+

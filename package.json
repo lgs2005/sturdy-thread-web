@@ -1,0 +1,26 @@
+{
+  "name": "sturdy-thread-web",
+  "version": "0.0.1",
+  "description": "sturdy-thread-web, aka calendar_app backend",
+  "main": "./bin/server.js",
+  "scripts": {
+    "start": "node ./bin/server.js",
+    "start-compile": "npx tsc && npm run start"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/sqlite3": "^3.1.7",
+    "bcrypt": "^5.0.1",
+    "fastify": "^3.23.1",
+    "fastify-cors": "^6.0.2",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "typescript": "^4.4.4"
+  }
+}

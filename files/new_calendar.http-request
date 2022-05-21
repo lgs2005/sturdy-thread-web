@@ -1,0 +1,15 @@
+{
+  "body": {
+    "content": "ewoibmFtZSI6ICJjYWxlbmRhcjEiLAoicHVibGljIjogZmFsc2UsCiJkZXNjcmlwdGlvbiI6ICIiCn0=",
+    "file": false,
+    "fileSize": false
+  },
+  "headers": {
+    "x-auth-id": "1",
+    "x-auth-token": "0c4cf598-5867-429c-a573-d2aab96b8aaf",
+    "content-type": "application/json"
+  },
+  "method": "POST",
+  "title": "New HTTP Request",
+  "url": "localhost:3000/new/calendar"
+}

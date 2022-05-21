@@ -1,0 +1,3 @@
+login:
+	-endpoint to check wether a user exists or not
+	-endpoint to check wether a password is right or not
